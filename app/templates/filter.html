@@ -1,0 +1,48 @@
+<h1>Filter Department</h1>
+
+    <div>
+      <legend>Filter Company for Department </legend>
+			<form>	
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Accounting"> Accounting			
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" ng-true-value="true" value="Advertising">  Advertising	
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Asset Management"> 
+					Asset Management
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Customer Relations"> 
+					Customer Relations	
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Customer Service"> 
+					Customer Service	
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Finances"> 
+					Finances
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose( filterlocation)" value="Human Resources"> 
+					Human Resources	
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Legal Department"> 
+					Legal Department	
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Media Relations"> 
+					Media Relations	
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Payroll"> 
+					Payroll
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Quality Assurance"> 
+					Quality Assurance
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Sales and Marketing"> 
+					Sales and Marketing		
+				<input type="radio" ng-model="filterlocation" 
+				ng-change="vm.choose(filterlocation)" 
+				value="Research and Development"> 
+					Research and Development
+				<input type="radio" ng-model="filterlocation" ng-change="vm.choose(filterlocation)" value="Tech Support"> 
+					Tech Support				
+			</form>	
+    </div>
+    <div class="list-group">
+    <div class="list-group-item" ng-repeat="user in vm.company">
+           <div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3>{{user.comapnyName}}</h3>
+    </div>
+     <div class="panel-body">
+     	<div><h4>Owner:</h4> {{user.companyOwner}}</div>
+     	<div><h4>Departments:</h4> {{user.companyDepartments}}</div>
+ 	</div>
+</div>
+    </div>
+</div>

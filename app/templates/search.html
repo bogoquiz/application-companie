@@ -1,0 +1,18 @@
+    <h1>Search for Company </h1>
+    <div>
+       <input type="text" ng-model="query" class="form-control" 
+       placeholder="Company name (Try 'urna','eu')" 
+       szn-autocomplete highlight-first="true" shadowInput="true" class="list-group">       
+    </div>
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3>{{vm.company.comapnyName}}</h3>
+    </div>
+     <div class="panel-body">
+     <div><h4>ID:</h4> {{vm.company.companyID}}</div>
+     <div><h4>Owner:</h4> {{vm.company.companyOwner}}</div>
+     <div><h4>Start Date:</h4> {{vm.company.companyStartDate}}</div>
+     <div><h4>Description:</h4> {{vm.company.companyDescription}}</div>
+     <div><h4>Departments:</h4> {{vm.company.companyDepartments}}</div>
+ </div>
+</div>
